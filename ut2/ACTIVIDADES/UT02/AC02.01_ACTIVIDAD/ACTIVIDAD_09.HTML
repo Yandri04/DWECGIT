@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTIVIDAD_08</title>
+    <title>ACTIVIDAD_09</title>
 </head>
 <body>
     <script> 
@@ -14,15 +14,18 @@
             val1 = prompt("Vuelve a decirme un  numero: ") ;
         }
 
-        function factorial(num) {
-            let facto = 1;
-            for (let i = 1; i <= num; i++) {
-             facto *= i;
+        function iteracionParOImpart(num) {
+            
+            for (let i = 0; i <= num; i++) {
+                if(i % 2 == 0){
+                    console.log(i + " Es par")
+                }else{
+                    console.log(i + " Es impar")
+                }
             }
-            return facto;
-        }
         
-        alert(factorial(val1));
+        }
+       iteracionParOImpart(val1);
 
     </script>
     
